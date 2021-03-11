@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <!--b4-navbar-->
+    <nav class="navbar navbar-expand-sm navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownId">
+                        <a class="dropdown-item" href="#">Action 1</a>
+                        <a class="dropdown-item" href="#">Action 2</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <!--b4-jum-->
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+            <h1 class="display-3">四資管一甲</h1>
+            <p class="lead">Jumbo helper text</p>
+            <hr class="my-2">
+            <p>More info</p>
+            <p class="lead">
+                <a class="btn btn-primary btn-lg" href="Jumbo action link" role="button">Jumbo action name</a>
+            </p>
+        </div>
+    </div>
+
+
+    <!--class是bootsrao style是CSS-->
+    <div class="m-5" style="margin:30px">
+        <!--可以看到使用者送出的東西-->
+        <form action="check.php" method="POST">
+            <!--b4-form-->
+            <!--輸入帳號-->
+            <div class="form-group">
+                <label for="">E-mail</label>
+                <input type="text" name="e-mail" id="e-mail" class="form-control" placeholder="請輸入e-mail">
+            </div>
+            <!--輸入密碼-->
+            <div class="form-group">
+                <label for="">Password</label>
+                <input type="password" name="password" id="password" class="form-control" placeholder="請輸入密碼">
+            </div>
+            <!--日期選擇-->
+            <div class="form-group">
+                <label for="">生日</label>
+                <input type="date" name="date" id="date" class="form-control" placeholder="請輸入生日日期">
+            </div>
+            <!--顏色選擇-->
+            <div class="form-group">
+                <label for="">顏色</label>
+                <input type="color" name="color" id="color" class="form-control" placeholder="請選擇顏色">
+            </div>
+
+            <!--留言板-->
+            <div class="form-group">
+                <label for="">留言</label>
+                <textarea class="form-control" name="msg" id="msg" rows="4"></textarea>
+            </div>
+
+            <!--性別選擇-->
+            <!--分列分行多個選項--> <!--name相同才能單選-->
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="checkedValue" checked>
+                    男性
+                </label>
+            </div>
+            <div class="form-check">
+                <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="sex" id="" value="checkedValue" checked>
+                    女性
+                </label>
+            </div>
+            <!--休閒選擇-->
+            <!--同一列多個選項--> <!--邊界的語法[ml-2]-->
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 閱讀
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 聽音樂
+                </label>
+                <label class="form-check-label ml-2">
+                    <input class="form-check-input" type="checkbox" name="" id="" value="checkedValue"> 看電影
+                </label>
+            </div>
+            <!--學歷選擇-->
+            <!--單選-->
+            <div class="form-group">
+              <label for="">最高學歷</label>
+              <select class="form-control" name="degree" id="">
+                <option>碩士以上</option>
+                <option>大學</option>
+                <option>高中職</option>
+                <option>國中以下</option>
+              </select>
+            </div>
+
+            <!--submit將資料傳送到後端-->
+            <button type="submit" class="btn btn-danger">送出</button>
+        </form>
+    </div>
+
+    <!--b4-table-->
+    <table class="table table-striped table-bordered table-hover text-center">
+        <thead class="table-info">
+            <tr>
+                <th>學號</th>
+                <th>姓名</th>
+                <th>住址</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td scope="row">40941105</td>
+                <td class="table-danger">徐煜淳</td>
+                <td>虎尾科技大學</td>
+            </tr>
+            <tr>
+                <td scope="row">40941108</td>
+                <td class="table-success">許婉宜</td>
+                <td>虎尾科技大學</td>
+            </tr>
+            <tr>
+                <td scope="row">40941111</td>
+                <td class="table-primary">盧玉可</td>
+                <td>虎尾科技大學</td>
+            </tr>
+            <tr>
+                <td scope="row">40941122</td>
+                <td class="table-warning">柯琮聖</td>
+                <td>虎尾科技大學</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
